@@ -16,7 +16,7 @@ incremental = false
 [dependencies]
 arboard = "3.7.0"
 cfb = "0.16.0"
-clap = { version = "4.6.7", features = ["derive"] }
+clap = { version = "4.6.10", features = ["derive"] }
 chrono = "0.4.45"
 dark-light = "3.0.0"
 directories = "6.0.0"
@@ -25,19 +25,19 @@ encoding_rs = "0.8.44"
 futures-util = "0.3.34"
 image = { version = "0.25.10", default-features = false, features = ["jpeg", "png"] }
 log = "0.4.35"
-regex = "1.13.1"
+regex = "1.13.2"
 reqwest = { version = "0.13.5", features = ["json", "stream", "gzip"] }
 rfd = "0.18.0"
 serde = { version = "1.0.229", features = ["derive"] }
 serde_json = "1.0.154"
 thiserror = "2.0.21"
 tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread", "sync", "time"] }
-gpui-kit = "=0.9.1"
+gpui-kit = "=0.11.0"
 
 [target.'cfg(target_arch = "aarch64")'.dependencies]
 # Use Pathfinder's portable backend: its ARM LLVM intrinsics are incompatible
 # with current nightly Rust. Keep latest nightly and native SIMD on x86/x64.
-pathfinder_simd = { version = "0.5.6", features = ["pf-no-simd"] }
+pathfinder_simd = { version = "0.5.7", features = ["pf-no-simd"] }
 
 [target.'cfg(windows)'.dependencies]
 windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_Graphics_Dwm", "Win32_UI_Shell", "Win32_UI_WindowsAndMessaging"] }
