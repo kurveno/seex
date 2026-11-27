@@ -26,8 +26,8 @@ use crate::ui::{components, fonts, theme};
 
 pub const PATTERN_QUICK: &str = "regex:(?m)^(C\\d{3,})$";
 pub const PATTERN_FULL: &str = "regex:编号[：:]\\s*(C\\d+)";
-const RELEASES_API_URL: &str = "https://api.github.com/repos/ref42/seex/releases/latest";
-const RELEASES_WEB_URL: &str = "https://github.com/ref42/seex/releases/latest";
+const RELEASES_API_URL: &str = "https://api.github.com/repos/kurveno/seex/releases/latest";
+const RELEASES_WEB_URL: &str = "https://github.com/kurveno/seex/releases/latest";
 /// How long after start-up the first background update check runs, and how
 /// often it asks again. The check used to happen only when someone pressed the
 /// button on the More page, so a release could sit unnoticed indefinitely.
@@ -1155,13 +1155,13 @@ impl SeexUi {
         //
         // Sizing by a fixed third was the bug: a wider font or a narrower window
         // pushed the copyright past its column, and right-aligning then clipped
-        // the start of the text — "yright (c) Ref42...".
+        // the start of the text — "yright (c) kurveno...".
         const PADDING: f32 = 14.0;
         const GAP: f32 = 16.0;
         // What the middle column keeps when the two ends ask for everything: the
         // notice is the point of the bar, so it never collapses to nothing.
         const MIN_MIDDLE: f32 = 160.0;
-        const COPYRIGHT: &str = "Copyright (c) Ref42. All rights reserved.";
+        const COPYRIGHT: &str = "Copyright (c) kurveno. All rights reserved.";
         let font_size = px(theme::scaled_font(24.0));
         let font = fonts::ui_font(self.font_latin.clone(), self.han_fallbacks.clone());
         let text_width = |text: &str| {
@@ -1467,7 +1467,7 @@ fn set_windows_app_id() {
     use std::ffi::OsStr;
     use std::os::windows::ffi::OsStrExt;
 
-    let app_id: Vec<u16> = OsStr::new("Ref42.SeEx")
+    let app_id: Vec<u16> = OsStr::new("kurveno.SeEx")
         .encode_wide()
         .chain(std::iter::once(0))
         .collect();

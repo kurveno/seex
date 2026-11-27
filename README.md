@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[![release](https://img.shields.io/github/v/release/ref42/seex?display_name=tag)](https://github.com/ref42/seex/releases) [![license](https://img.shields.io/badge/license-Non--Commercial-blue)](LICENSE) [![CI](https://img.shields.io/github/actions/workflow/status/ref42/seex/ci.yml)](https://github.com/ref42/seex/actions/workflows/ci.yml) [![downloads](https://img.shields.io/github/downloads/ref42/seex/total)](https://github.com/ref42/seex/releases)
+[![release](https://img.shields.io/github/v/release/kurveno/seex?display_name=tag)](https://github.com/kurveno/seex/releases) [![license](https://img.shields.io/badge/license-Non--Commercial-blue)](LICENSE) [![CI](https://img.shields.io/github/actions/workflow/status/kurveno/seex/ci.yml)](https://github.com/kurveno/seex/actions/workflows/ci.yml) [![downloads](https://img.shields.io/github/downloads/kurveno/seex/total)](https://github.com/kurveno/seex/releases)
 
 ![Rust](https://img.shields.io/badge/Rust-2024-orange?logo=rust&logoColor=white) ![GPUI](https://img.shields.io/badge/UI-gpui--kit-8b5cf6) ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D6?logo=windows&logoColor=white) ![tokio](https://img.shields.io/badge/Async-tokio-14b8a6) ![reqwest](https://img.shields.io/badge/HTTP-reqwest-2ea44f)
 
@@ -155,12 +155,12 @@
 
 ### 下载
 
-从 [Releases](https://github.com/ref42/seex/releases) 下载对应平台的压缩包，解压后直接运行 `seex.exe`，无需安装。
+从 [Releases](https://github.com/kurveno/seex/releases) 下载对应平台的压缩包，解压后直接运行 `seex.exe`，无需安装。
 
 ### 从源码构建
 
 ```bash
-git clone https://github.com/ref42/seex.git
+git clone https://github.com/kurveno/seex.git
 cd seex
 cargo build --release
 ```
@@ -190,7 +190,7 @@ cargo build --release
 
 ## 🧩 姐妹项目
 
-- [npnp](https://github.com/ref42/npnp) 是 `seex` 的 `cli` 版本，更适合 `AI`/`Agent` 直接调用。
+- [npnp](https://github.com/kurveno/npnp) 是 `seex` 的 `cli` 版本，更适合 `AI`/`Agent` 直接调用。
   - 你甚至可以让 `AI` 帮你分析某个工程，然后调用 `npnp` 导出所需要的元件。这样就不必再手动搜索挑选器件，只需要核验把关即可。
   - 如果你有待导出元件的客编号，那就更好了，直接喂给 `npnp` 导出即可。
   - 你也可以将 `npnp` 作为 `CI` 工具。

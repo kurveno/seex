@@ -7,8 +7,8 @@ use crate::lceda::SearchItem;
 use crate::lcsc::LcscProduct;
 use crate::util::{nested_string, value_to_string};
 
-const SEEX_AUTHOR: &str = "ref42";
-const SEEX_PROJECT_URL: &str = "https://github.com/ref42/seex";
+const SEEX_AUTHOR: &str = "kurveno";
+const SEEX_PROJECT_URL: &str = "https://github.com/kurveno/seex";
 
 #[derive(Debug, Clone, Default, PartialEq, Eq)]
 pub struct ResolvedMetadata {
@@ -388,10 +388,10 @@ mod tests {
         assert_eq!(metadata.description.as_deref(), Some("Source description"));
         assert_eq!(metadata.manufacturer.as_deref(), Some("Raspberry Pi"));
         assert_eq!(metadata.footprint.as_deref(), Some("QFN-56"));
-        assert_eq!(parameter_value(&metadata, "SEEX_AUTHOR"), Some("ref42"));
+        assert_eq!(parameter_value(&metadata, "SEEX_AUTHOR"), Some("kurveno"));
         assert_eq!(
             parameter_value(&metadata, "SEEX_PROJECT_URL"),
-            Some("https://github.com/ref42/seex")
+            Some("https://github.com/kurveno/seex")
         );
         assert_eq!(
             parameter_value(&metadata, "SEEX_COMPONENT_ID"),

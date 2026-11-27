@@ -1,7 +1,7 @@
 use directories::ProjectDirs;
 use serde::{Deserialize, Serialize};
 use std::fs;
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 
 const CONFIG_FILENAME: &str = "export_config.json";
 
@@ -100,7 +100,7 @@ impl Default for ExportConfig {
 
 impl AppConfig {
     fn config_path() -> PathBuf {
-        ProjectDirs::from("com", "ref42", "SeExEgui")
+        ProjectDirs::from("com", "kurveno", "SeExEgui")
             .map(|dirs| dirs.config_dir().join(CONFIG_FILENAME))
             .or_else(|| {
                 std::env::current_exe()
@@ -112,7 +112,22 @@ impl AppConfig {
 
     pub fn load() -> Self {
         let path = Self::config_path();
-        match fs::read_to_string(&path) {
+        // Read pre-rename settings until the first save writes the new location.
+        let legacy_path = ProjectDirs::from("com", "ref42", "SeExEgui")
+            .map(|dirs| dirs.config_dir().join(CONFIG_FILENAME));
+        Self::load_from_paths(&path, legacy_path.as_deref())
+    }
+
+    fn load_from_paths(path: &Path, legacy_path: Option<&Path>) -> Self {
+        let content = fs::read_to_string(path).or_else(|error| {
+            if error.kind() == std::io::ErrorKind::NotFound {
+                if let Some(legacy_path) = legacy_path.filter(|legacy| *legacy != path) {
+                    return fs::read_to_string(legacy_path);
+                }
+            }
+            Err(error)
+        });
+        match content {
             Ok(content) => serde_json::from_str(&content).unwrap_or_default(),
             Err(_) => Self::default(),
         }
@@ -126,5 +141,46 @@ impl AppConfig {
         if let Ok(content) = serde_json::to_string_pretty(self) {
             let _ = fs::write(path, content);
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn renamed_config_preserves_legacy_preferences_and_prefers_new_settings() {
+        let unique = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .unwrap()
+            .as_nanos();
+        let dir = std::env::temp_dir().join(format!("seex-config-{}-{unique}", std::process::id()));
+        fs::create_dir_all(&dir).unwrap();
+        let current = dir.join("current.json");
+        let legacy = dir.join("legacy.json");
+
+        fs::write(&legacy, r#"{"ui_language":"chinese"}"#).unwrap();
+        assert_eq!(
+            AppConfig::load_from_paths(&current, Some(&legacy)).ui_language,
+            "chinese"
+        );
+        fs::write(&current, r#"{"ui_language":"english"}"#).unwrap();
+        assert_eq!(
+            AppConfig::load_from_paths(&current, Some(&legacy)).ui_language,
+            "english"
+        );
+        // Invalid new settings must not silently revive stale legacy settings.
+        fs::write(&current, "invalid json").unwrap();
+        assert_eq!(
+            AppConfig::load_from_paths(&current, Some(&legacy)).ui_language,
+            AppConfig::default().ui_language
+        );
+        fs::remove_file(&current).unwrap();
+        fs::remove_file(&legacy).unwrap();
+        assert_eq!(
+            AppConfig::load_from_paths(&current, Some(&legacy)).ui_language,
+            AppConfig::default().ui_language
+        );
+        fs::remove_dir(&dir).unwrap();
     }
 }

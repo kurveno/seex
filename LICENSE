@@ -1,7 +1,7 @@
 SeEx Non-Commercial Share-Alike License
 Version 1.0
 
-Copyright (c) 2026 Ref42. All rights reserved.
+Copyright (c) 2026 kurveno. All rights reserved.
 
 1. Permission
 
@@ -11,7 +11,7 @@ that all conditions in this license are followed.
 
 2. Non-commercial use only
 
-Commercial use is prohibited without prior written permission from Ref42.
+Commercial use is prohibited without prior written permission from kurveno.
 Commercial use includes, but is not limited to:
 
 - selling or licensing the software or a modified version;
@@ -25,9 +25,9 @@ Commercial use includes, but is not limited to:
 
 Every copy, distribution, or modified version must clearly credit the
 original project and copyright holder in a reasonable location. The credit
-must include "SeEx by Ref42" and a link to the original project repository:
+must include "SeEx by kurveno" and a link to the original project repository:
 
-https://github.com/ref42/seex
+https://github.com/kurveno/seex
 
 Copyright notices, this license, and existing attribution notices must be
 preserved in source distributions and documentation.
@@ -48,10 +48,10 @@ reasonable manner.
 
 You may submit modifications and contributions to the original project for
 consideration. Unless a separate written agreement states otherwise, each
-contributor grants Ref42 a perpetual, worldwide, non-exclusive, royalty-free
+contributor grants kurveno a perpetual, worldwide, non-exclusive, royalty-free
 license to use, reproduce, modify, publish, distribute, and sublicense that
 contribution as part of SeEx under this license or another license chosen by
-Ref42.
+kurveno.
 
 6. Restrictions
 
@@ -64,7 +64,7 @@ granted except for the limited copyright permissions expressly stated here.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL
-REF42 OR THE CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+kurveno OR THE CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
 FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
@@ -72,14 +72,14 @@ DEALINGS IN THE SOFTWARE.
 8. Termination
 
 Any rights granted under this license terminate automatically if you violate
-these terms. Rights may be reinstated only by written permission from Ref42.
+these terms. Rights may be reinstated only by written permission from kurveno.
 
 
 ============================================================
 SeEx 非商业性相同方式共享许可证
 版本 1.0
 
-版权所有 (c) 2026 Ref42。保留所有权利。
+版权所有 (c) 2026 kurveno。保留所有权利。
 
 1. 授权
 
@@ -87,7 +87,7 @@ SeEx 非商业性相同方式共享许可证
 
 2. 仅限非商业使用
 
-未经 Ref42 事先书面许可，禁止商业使用。
+未经 kurveno 事先书面许可，禁止商业使用。
 商业使用包括但不限于：
 
 - 出售或授权本软件或其修改版本；
@@ -98,9 +98,9 @@ SeEx 非商业性相同方式共享许可证
 
 3. 署名
 
-每一份副本、分发版本或修改版本都必须在合理位置明确标明原始项目和版权所有者。署名必须包含“SeEx by Ref42”以及原始项目仓库链接：
+每一份副本、分发版本或修改版本都必须在合理位置明确标明原始项目和版权所有者。署名必须包含“SeEx by kurveno”以及原始项目仓库链接：
 
-https://github.com/ref42/seex
+https://github.com/kurveno/seex
 
 源代码分发和文档中必须保留版权声明、本许可证以及已有的署名声明。
 
@@ -116,7 +116,7 @@ https://github.com/ref42/seex
 
 5. 贡献
 
-您可以向原始项目提交修改和代码贡献，供项目维护者考虑。除非另有书面协议，每位贡献者均授予 Ref42 一项永久、全球范围、非独占、免版税的许可，允许 Ref42 将该贡献作为 SeEx 的一部分使用、复制、修改、发布、分发，并在本许可证或 Ref42 选择的其他许可证下进行再授权。
+您可以向原始项目提交修改和代码贡献，供项目维护者考虑。除非另有书面协议，每位贡献者均授予 kurveno 一项永久、全球范围、非独占、免版税的许可，允许 kurveno 将该贡献作为 SeEx 的一部分使用、复制、修改、发布、分发，并在本许可证或 kurveno 选择的其他许可证下进行再授权。
 
 6. 限制
 
@@ -124,8 +124,8 @@ https://github.com/ref42/seex
 
 7. 免责声明
 
-本软件按“现状”提供，不附带任何明示或默示的保证，包括但不限于适销性、特定用途适用性和不侵权保证。在任何情况下，无论基于合同、侵权或其他原因，对于因本软件或其使用或其他交易而产生的任何索赔、损害或其他责任，Ref42或贡献者均不承担责任。
+本软件按“现状”提供，不附带任何明示或默示的保证，包括但不限于适销性、特定用途适用性和不侵权保证。在任何情况下，无论基于合同、侵权或其他原因，对于因本软件或其使用或其他交易而产生的任何索赔、损害或其他责任，kurveno或贡献者均不承担责任。
 
 8. 终止
 
-如果您违反本许可证条款，本许可证授予的所有权利将自动终止。只有在获得Ref42 书面许可后，相关权利才可能恢复。
+如果您违反本许可证条款，本许可证授予的所有权利将自动终止。只有在获得kurveno 书面许可后，相关权利才可能恢复。

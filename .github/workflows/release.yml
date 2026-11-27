@@ -115,10 +115,10 @@ jobs:
               'AppName=SeEx'
               "AppVersion=$version"
               "AppVerName=SeEx $version"
-              'AppPublisher=Ref42'
-              'AppPublisherURL=https://github.com/ref42/seex'
-              'AppSupportURL=https://github.com/ref42/seex'
-              'AppUpdatesURL=https://github.com/ref42/seex/releases'
+              'AppPublisher=kurveno'
+              'AppPublisherURL=https://github.com/kurveno/seex'
+              'AppSupportURL=https://github.com/kurveno/seex'
+              'AppUpdatesURL=https://github.com/kurveno/seex/releases'
               'ArchitecturesAllowed=x64'
               'ArchitecturesInstallIn64BitMode=x64'
               'DefaultDirName={autopf}\SeEx'

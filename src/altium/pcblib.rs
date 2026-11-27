@@ -10,8 +10,8 @@ use encoding_rs::WINDOWS_1252;
 use crate::error::Result;
 
 const LIBRARY_DATA_TEMPLATE: &str = include_str!("pcblib_library_data_template.txt");
-const SEEX_AUTHOR: &str = "ref42";
-const SEEX_PROJECT_URL: &str = "https://github.com/ref42/seex";
+const SEEX_AUTHOR: &str = "kurveno";
+const SEEX_PROJECT_URL: &str = "https://github.com/kurveno/seex";
 
 pub const LAYER_TOP: u8 = 1;
 pub const LAYER_BOTTOM: u8 = 32;

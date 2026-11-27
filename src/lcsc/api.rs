@@ -18,7 +18,7 @@ impl LcscClient {
     pub fn new() -> Self {
         let client = Client::builder()
             .user_agent(format!(
-                "seex/{} (+https://github.com/ref42/seex)",
+                "seex/{} (+https://github.com/kurveno/seex)",
                 env!("CARGO_PKG_VERSION")
             ))
             .connect_timeout(Duration::from_secs(5))

@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[![release](https://img.shields.io/github/v/release/ref42/seex?display_name=tag)](https://github.com/ref42/seex/releases) [![license](https://img.shields.io/badge/license-Non--Commercial-blue)](LICENSE) [![CI](https://img.shields.io/github/actions/workflow/status/ref42/seex/ci.yml)](https://github.com/ref42/seex/actions/workflows/ci.yml) [![downloads](https://img.shields.io/github/downloads/ref42/seex/total)](https://github.com/ref42/seex/releases)
+[![release](https://img.shields.io/github/v/release/kurveno/seex?display_name=tag)](https://github.com/kurveno/seex/releases) [![license](https://img.shields.io/badge/license-Non--Commercial-blue)](LICENSE) [![CI](https://img.shields.io/github/actions/workflow/status/kurveno/seex/ci.yml)](https://github.com/kurveno/seex/actions/workflows/ci.yml) [![downloads](https://img.shields.io/github/downloads/kurveno/seex/total)](https://github.com/kurveno/seex/releases)
 
 ![Rust](https://img.shields.io/badge/Rust-2024-orange?logo=rust&logoColor=white) ![GPUI](https://img.shields.io/badge/UI-gpui--kit-8b5cf6) ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D6?logo=windows&logoColor=white) ![tokio](https://img.shields.io/badge/Async-tokio-14b8a6) ![reqwest](https://img.shields.io/badge/HTTP-reqwest-2ea44f)
 
@@ -155,12 +155,12 @@
 
 ### Download
 
-Download the archive for your platform from [Releases](https://github.com/ref42/seex/releases), unpack it and run `seex.exe` — no installation needed.
+Download the archive for your platform from [Releases](https://github.com/kurveno/seex/releases), unpack it and run `seex.exe` — no installation needed.
 
 ### Build from source
 
 ```bash
-git clone https://github.com/ref42/seex.git
+git clone https://github.com/kurveno/seex.git
 cd seex
 cargo build --release
 ```
@@ -190,7 +190,7 @@ A little grumbling:
 
 ## 🧩 Sister Project
 
-- [npnp](https://github.com/ref42/npnp) is the `cli` version of `seex`, and is better suited to being called directly by `AI`/agents.
+- [npnp](https://github.com/kurveno/npnp) is the `cli` version of `seex`, and is better suited to being called directly by `AI`/agents.
   - You can even have `AI` analyse a project for you, and then call `npnp` to export the components it needs. That way you no longer have to search and pick parts by hand — you only have to verify the result.
   - If you already have the part numbers to export, even better: feed them straight to `npnp`.
   - You can also use `npnp` as a `CI` tool.
